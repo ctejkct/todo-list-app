@@ -7,7 +7,6 @@ function App() {
   const [todos, setTodos] = useState([]);
   const [status, setStatus] = useState("All");
   const [filteredItems, setFilteredItems] = useState([]);
-
   useEffect(() => {
     const filterhandler = () => {
       switch (status) {
@@ -27,7 +26,7 @@ function App() {
 
   return (
     <>
-      <h1 className="header">Charan's To Do List</h1>
+      <h1 className="header">To Do List</h1>
       <Form
         inputText={inputText}
         todos={todos}
